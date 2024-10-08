@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        let userInput = prompt("Select an option: \n 1) Multiplication \n 2) Subtraction \n 3) Exponention \n 4) Division")
+        if(userInput === null){
+            prompt("Kindly Select A Number: ")
+        }
+        if(userInput === "1"){
+            multiply()
+        }else if(userInput === "2"){
+            subtract()
+        }else if(userInput === "3"){
+            exponent()
+        }else if(userInput === "4"){
+            divide()
+        }else{
+            alert("Invalid Input")
+        }
+
+
+        function multiply(){
+            const a = Number(prompt("Enter first number: "))
+            const b = Number(prompt("Enter second number: "))
+            return document.write(`The multiplication for ${a} * ${b} is : `, a * b)
+        }
+
+        function divide(){
+            const a = Number(prompt("Enter first number: "))
+            const b = Number(prompt("Enter second number: "))
+            return document.write(`The division for ${a} / ${b} is : `, a / b)
+        }
+
+        function subtract(){
+            const a = Number(prompt("Enter first number: "))
+            const b = Number(prompt("Enter second number: "))
+            return document.write(`The subtraction for ${a} - ${b} is : `, a - b)
+        }
+
+        function exponent(){
+            const a = Number(prompt("Enter first number: "))
+            const b = Number(prompt("Enter second number: "))
+            return document.write(`The exponentiaition for ${a}^${b} is : `, a ** b)
+        }
+    </script>
+</body>
+</html>
